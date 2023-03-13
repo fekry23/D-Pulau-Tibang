@@ -1,0 +1,97 @@
+body{
+  background-image: url('../Background/background.jpg'); 
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.imgBox{
+  display: flex;
+  justify-content: center;
+}
+
+.amirpandai
+{
+  max-width: 100%;
+  height: auto;
+  border-bottom: 3px solid white;
+  border-radius: 0px 0px 100px 100px;
+}
+.amirpandai:hover
+{
+  transition: 0.7s;
+  box-shadow: 0 10px 18px 0 rgb(120, 224, 143);
+}
+.container
+{
+  width: 100%;
+  margin: 70px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container .box
+{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: #fff;
+  margin: 10px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+.container .box .imgBox
+{
+  position: relative;
+  overflow: hidden;
+  border: 5px dotted white;
+}
+.container .box .imgBox img
+{
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+  transition: transform 5s;
+}
+.container .box:hover .imgBox img
+{
+  transform: scale(1.2);
+}
+.container .box .details
+{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 0px;
+  right: 10px;
+  background: rgba(0,0,0,.8);
+  transform: scaleY(0);
+  transition: transform .5s;
+}
+.container .box:hover .details
+{
+  transform: scaleY(1);
+}
+.container .box .details .content
+{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+}
+.container .box .details .content h2
+{
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  color: #7bed9f;
+}
+.container .box .details .content p
+{
+  margin: 10px 0 0;
+  padding: 0;
+}

@@ -1,0 +1,255 @@
+body {
+   background-image: url('../Background/background.jpg');
+   background-color: #cccccc;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.header-image {
+   display: flex;
+   justify-content: center;
+   padding-bottom: 50px;
+}
+
+.header-image img {
+   max-width: 100%;
+   height: auto;
+   border-bottom: 3px solid white;
+   border-radius: 0px 0px 100px 100px;
+}
+
+.header-image img:hover {
+   transition: 0.7s;
+   box-shadow: 0 10px 18px 0 rgb(120, 224, 143);
+}
+
+.wrapper {
+   width: 1000px;
+   height: 300px;
+   background-color: white;
+   box-shadow: 5px 6px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   margin-right: auto;
+   margin-left: auto;
+   margin-top: -16px;
+}
+
+
+.left p {
+   font-family: 'Trebuchet MS';
+   text-align: center;
+   font-size: 15px;
+   color: #555;
+}
+
+.right p {
+   font-family: 'Trebuchet MS';
+   text-align: center;
+   font-size: 15px;
+   color: #555;
+}
+
+.left a {
+   text-decoration: underline;
+   text-align: center;
+   font-family: Trebuchet MS;
+   font-size: 30px;
+   color: black;
+
+}
+
+.right a {
+   text-decoration: underline;
+   text-align: center;
+   font-family: Trebuchet MS;
+   font-size: 30px;
+   color: black;
+
+}
+
+.wrapper:hover {
+   border-color: #c2b7b7;
+   background-color: #FFFEEE;
+}
+
+.house1,
+.house3,
+.house5 {
+   width: 50%;
+   height: 300px;
+   float: left;
+}
+
+.house2,
+.house4,
+.house6 {
+   width: 50%;
+   height: 300px;
+   float: right;
+}
+
+#myBtn {
+   display: none;
+   /* Hidden by default */
+   position: fixed;
+   /* Fixed/sticky position */
+   bottom: 20px;
+   /* Place the button at the bottom of the page */
+   right: 30px;
+   /* Place the button 30px from the right */
+   z-index: 99;
+   /* Make sure it does not overlap */
+   border: none;
+   /* Remove borders */
+   outline: none;
+   /* Remove outline */
+   background-color: red;
+   /* Set a background color */
+   color: white;
+   /* Text color */
+   cursor: pointer;
+   /* Add a mouse pointer on hover */
+   padding: 15px;
+   /* Some padding */
+   border-radius: 10px;
+   /* Rounded corners */
+   font-size: 18px;
+   /* Increase font size */
+}
+
+#myBtn:hover {
+   background-color: #555;
+   /* Add a dark-grey background on hover */
+}
+
+/* MEDIA QUERIES */
+
+/* TABLETS */
+@media screen and (max-width: 768px) {
+   html {
+      background-size: auto;
+   }
+
+   .wrapper {
+      width: 568px;
+      height: 204px;
+   }
+
+   .left p {
+      font-size: 13px;
+   }
+
+   .right p {
+      font-size: 13px;
+   }
+
+   .left a {
+      font-size: 20px;
+   }
+
+   .right a {
+      font-size: 20px;
+   }
+
+   .house1,
+   .house3,
+   .house5 {
+      width: 50%;
+      height: 200px;
+      float: left;
+   }
+
+   .house2,
+   .house4,
+   .house6 {
+      width: 50%;
+      height: 200px;
+      float: right;
+   }
+}
+
+
+/* MOBILES */
+@media screen and (max-width:425px) {
+
+   html {
+      background-size: auto;
+   }
+
+   .wrapper {
+      width: 313px;
+      height: 167px;
+   }
+
+   .left p {
+      font-size: 8px;
+   }
+
+   .right p {
+      font-size: 8px;
+   }
+
+   .left a {
+      font-size: 18px;
+   }
+
+   .right a {
+      font-size: 18px;
+   }
+
+   .house1,
+   .house3,
+   .house5 {
+      width: 50%;
+      height: 160px;
+      float: left;
+   }
+
+   .house2,
+   .house4,
+   .house6 {
+      width: 50%;
+      height: 160px;
+      float: right;
+   }
+}
+
+@media screen and (max-width: 375px) {
+   .wrapper {
+      width: 277px;
+      height: 128px;
+   }
+
+   .left p {
+      font-size: 7px;
+   }
+
+   .right p {
+      font-size: 7px;
+   }
+
+   .left a {
+      font-size: 15px;
+   }
+
+   .right a {
+      font-size: 15px;
+   }
+
+   .house1,
+   .house3,
+   .house5 {
+      width: 50%;
+      height: 120px;
+      float: left;
+   }
+
+   .house2,
+   .house4,
+   .house6 {
+      width: 50%;
+      height: 120px;
+      float: right;
+   }
+
+}
